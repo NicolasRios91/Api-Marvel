@@ -18,7 +18,7 @@ header {
   background-position: center;
 }
 
-#nav-select {
+#character-select {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -162,7 +162,7 @@ table tr:nth-child(even) {
     font-size: 0.85rem;
   }
   #section-description,
-  #nav-select {
+  #character-select {
     width: 90%;
     margin: auto;
   }
