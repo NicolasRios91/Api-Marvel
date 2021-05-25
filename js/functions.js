@@ -1,4 +1,3 @@
-
 //sets list of letters
 const setLettersList = () => {
   let selectLyrics = $("letter");
@@ -18,9 +17,9 @@ const changeCharacter = () => {
 };
 
 const selectCharacterChange = () => {
-    let selectCharacter = $("characters");
-    selectCharacter.addEventListener("change", changeCharacter);
-  };
+  let selectCharacter = $("characters");
+  selectCharacter.addEventListener("change", changeCharacter);
+};
 
 //sets list according to letter value
 const setCharactersList = () => {
@@ -49,9 +48,9 @@ const setCharactersList = () => {
 };
 
 const updateCharactersList = () => {
-    let selectLyrics = $("letter");
-    selectLyrics.addEventListener("change", setCharactersList);
-  };
+  let selectLyrics = $("letter");
+  selectLyrics.addEventListener("change", setCharactersList);
+};
 
 const $ = (value) => {
   return document.getElementById(value);
@@ -79,7 +78,6 @@ function fetchCharacter(characterName) {
 
       $("td-character-name").innerHTML = character.name;
       $("description").innerHTML =
-        character.description ||
-        "Sorry! No info available for this character";
+        character.description || "Sorry! No info available for this character";
     });
 }
