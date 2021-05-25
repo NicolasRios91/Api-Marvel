@@ -161,6 +161,11 @@ table tr:nth-child(even) {
     width: 100%;
     font-size: 0.85rem;
   }
+  #section-description,
+  #nav-select {
+    width: 90%;
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 520px) {
   #banner {
