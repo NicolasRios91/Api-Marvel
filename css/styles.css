@@ -1,0 +1,216 @@
+body {
+    margin: auto;
+    background: black;
+    min-width: 360px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+
+#comic-background{
+    filter: grayscale(100%);
+}
+header {
+    padding-bottom: 5px;
+    margin: auto;
+    width: 60%;
+    height:120px;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+    background-image: url('../img/ban.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+
+}
+
+#selector{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    width: 80%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    height: 2.5rem;
+    margin-bottom: 7px;
+    outline: none;
+}
+
+.select-labels{
+    padding-bottom: 5px;
+}
+
+hr {
+    width: 60%;
+    border: 0;
+    border-radius: 10px;
+    height: 4px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(42, 37, 37, 0.75), rgb(255, 255, 255));
+}
+.container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    background-color: black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    box-sizing: border-box;
+}
+
+p {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer {
+    color: white;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.article-left,
+.article-right {
+    width: 50%;
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: auto;
+    background-color: #81673e;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+tr {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    padding: 10px 5px 10px 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(236 228 215);
+    color: black;
+}
+
+@media only screen and (max-width: 1400px) {
+    .container,
+    footer,header,hr {
+        width: 70%;
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container,
+    footer,header,hr{
+        width: 80%;
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container,
+    footer,header,hr {
+        width: 90%;
+        font-size: 0.95rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container,
+    footer,
+    .article-left,
+    .article-right,header,hr {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+}
+@media only screen and (max-width: 520px){
+    #banner{
+        width: 340px;
+    }
+}
+
+.image-profile {
+    text-align: center;
+}
+        
+#profile-image {
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+}
+.image-profile p {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.fa {
+    color: white;
+    padding: 8px;
+    width: 20px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.fa-facebook {
+    background: linear-gradient( 120deg, #3b5998, #7a79b4);
+}
+
+.fa-linkedin {
+    background: linear-gradient( 120deg, #007bb5, #7a79b4);
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.fa-github{
+    background: linear-gradient( 120deg, #9aa0a1, #474646 );
+}
+
+.fa:hover {
+    border: 1px solid white;
+}
